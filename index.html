@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: "Kumbh Sans", sans-serif;
+        overflow-x: hidden;
+      }
+      body {
+        background-color: hsl(185, 75%, 39%);
+        background-image: url(images/bg-pattern-top.svg),
+          url(images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+        overflow-x: hidden;
+      }
+
+      .container {
+        width: 40rem;
+        margin: 200px auto;
+        box-shadow: 0 0 20px 12px rgba(0, 0, 0, 0.089);
+        border-radius: 11px;
+        background-color: #fff;
+        /* position: relative; */
+      }
+
+      .background-top {
+        position: relative;
+        margin-bottom: 7.2rem;
+      }
+
+      .top-img {
+        width: 100%;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+      }
+
+      .victor {
+        border-radius: 50%;
+        border: 5px solid #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 25%);
+      }
+      .name-city {
+        text-align: center;
+      }
+      .header {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+      }
+      .city {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: hsl(0, 0%, 59%);
+        margin-bottom: 3.2rem;
+      }
+      .horizontal-ruler {
+        border-top: 0.5px solid hsla(0, 0%, 59%, 0.205);
+        margin-bottom: 1.6rem;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.2rem;
+      }
+
+      .column {
+        text-align: center;
+      }
+      .numbers {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .number-description {
+        letter-spacing: 1px;
+        color: hsl(0, 0%, 59%);
+        margin-bottom: 1.6rem;
+      }
+
+      @media (max-width: 28em) {
+        .container {
+          width: 35rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-top">
+        <img class="top-img" src="images/bg-pattern-card.svg" alt="" />
+        <img class="victor" src="images/image-victor.jpg" />
+      </div>
+      <div class="name-city">
+        <h2 class="header">Victor Crest <span>26</span></h2>
+        <p class="city">London</p>
+      </div>
+      <hr class="horizontal-ruler" />
+      <div class="flex-container">
+        <div class="column">
+          <p class="numbers">80K</p>
+          <p class="number-description">Followers</p>
+        </div>
+        <div class="column">
+          <p class="numbers">803K</p>
+          <p class="number-description">Likes</p>
+        </div>
+        <div class="column">
+          <p class="numbers">1.4K</p>
+          <p class="number-description">Photos</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
